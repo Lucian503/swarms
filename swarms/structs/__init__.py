@@ -68,6 +68,7 @@ from swarms.structs.multi_agent_exec import (
 )
 from swarms.structs.multi_agent_router import MultiAgentRouter
 from swarms.structs.round_robin import RoundRobinSwarm
+from swarms.structs.search_swarm import SearchSwarm
 from swarms.structs.self_moa_seq import SelfMoASeq
 from swarms.structs.sequential_workflow import SequentialWorkflow
 from swarms.structs.skill_orchestra import SkillOrchestra
@@ -186,4 +187,5 @@ __all__ = [
     "SubagentRegistry",
     "SubagentTask",
     "TaskStatus",
+    "SearchSwarm",
 ]
