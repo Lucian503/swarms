@@ -1,5 +1,10 @@
 from swarms.tools.base_tool import BaseTool
 from swarms.tools.json_utils import base_model_to_json
+from swarms.tools.search_engine import (
+    DocumentStore,
+    SearchResult,
+    create_search_tool_functions,
+)
 from swarms.tools.mcp_client_tools import (
     _create_server_tool_mapping,
     _create_server_tool_mapping_async,
@@ -55,6 +60,9 @@ __all__ = [
     "ToolStorage",
     "tool_registry",
     "base_model_to_json",
+    "DocumentStore",
+    "SearchResult",
+    "create_search_tool_functions",
     "execute_tool_call_simple",
     "_execute_tool_call_simple",
     "get_tools_for_multiple_mcp_servers",
