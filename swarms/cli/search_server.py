@@ -33,6 +33,8 @@ from swarms.utils.loguru_logger import initialize_logger
 
 logger = initialize_logger(log_folder="search_server")
 
+_API_VERSION = "1.0.0"
+
 
 def _json_response(
     handler: BaseHTTPRequestHandler,
@@ -108,7 +110,7 @@ class SearchRequestHandler(BaseHTTPRequestHandler):
                 self,
                 {
                     "service": "SearchSwarm API",
-                    "version": "1.0.0",
+                    "version": _API_VERSION,
                     "endpoints": {
                         "POST /search": (
                             "Search documents"

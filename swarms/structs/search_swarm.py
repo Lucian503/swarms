@@ -341,7 +341,14 @@ class SearchSwarm:
             "swarm_name": self.name,
             "agent_mode": self.agent_mode,
             "model_name": self.model_name,
-            **store_stats,
+            "index_name": store_stats["name"],
+            "document_count": store_stats[
+                "document_count"
+            ],
+            "unique_terms": store_stats["unique_terms"],
+            "avg_document_length": store_stats[
+                "avg_document_length"
+            ],
         }
 
     def save_index(
